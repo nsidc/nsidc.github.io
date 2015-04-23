@@ -18,7 +18,7 @@ While jekyll serve is fine there is a better way!
 2. Run `bundle exec rake build`
 3. In another terminal window cd to `_site` and run `live-server`
 
-As you edit your content the site will automatically be build and live-server will automatically update your changes in the browser.
+As you edit your content the site will automatically be built and live-server will automatically update your changes in the browser.
 
 ## Blogging Basics
 
