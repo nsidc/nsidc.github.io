@@ -1,0 +1,9 @@
+title: NSIDC Technology Blog
+email: programmers@nsidc.org
+#description: > # add a description below this line
+baseurl: ""
+url: "http://nsidc.org"
+twitter_username: nsidc
+github_username:  nsidc
+
+markdown: kramdown
