@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nsidc/nsidc.github.io.svg)](https://travis-ci.org/nsidc/nsidc.github.io)
+
 # NSIDC Technology Blog
 
 This is the source for the NSIDC Technology Blog at [nsidc.github.io](nsidc.github.io).
