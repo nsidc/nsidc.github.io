@@ -1,9 +1,10 @@
 title: NSIDC Technology Blog
 email: ""
-#description: > # add a description below this line
+description: "Technology discussions by developers at The National Snow and Ice Data Center (NSIDC)."
 baseurl: ""
 url: "http://nsidc.org"
 twitter_username: nsidc
 github_username:  nsidc
 
 markdown: kramdown
+paginate: 3
