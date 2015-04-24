@@ -6,6 +6,8 @@ task :new_post, [:title, :author] do |t, args|
 layout: post
 title: #{args.title}
 author: #{args.author}
+#summary: ""
+tags: [nsidc, technology]
 ---}
 
   fn_title = args.title.gsub(/[^0-9a-z ]/i, '-')
