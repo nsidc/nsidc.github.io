@@ -29,7 +29,7 @@ The first step in our transition to using conda was getting a basic development 
 
 ### Installing Miniconda
 
-Miniconda is the best place to start if your an experienced developer. It gives you the most lightweight, clean base to build off of. To install miniconda simply:
+Miniconda is the best place to start if you're an experienced developer. It gives you the most lightweight, clean base to build off of. To install miniconda simply:
 
 {% highlight bash %}
 $ wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
@@ -42,7 +42,7 @@ Follow the installation process and make sure to add the installation to your PA
 $ export PATH="/Users/[username]/miniconda/bin:$PATH" # add this to .bashrc
 {% endhighlight %}
 
-In addition I recommend installting argcomplete for conda command tab completion. This process is very simple:
+In addition I recommend installing argcomplete for conda command tab completion. This process is very simple:
 
 {% highlight bash %}
 $ conda install argcomplete
@@ -51,7 +51,7 @@ $ eval "$(register-python-argcomplete conda)" # add this to .bashrc
 
 ### Conda Environments
 
-The first thing you'll want to figure out is how to use conda environments (the virtualenv equivelant). Luckily this is also very simple! Lets create a new environment and install some packages:
+The first thing you'll want to figure out is how to use conda environments (the virtualenv equivelant). Luckily this is also very simple! Let's create a new environment and install some packages:
 
 {% highlight bash %}
 $ conda create -n test numpy
@@ -122,7 +122,7 @@ setup(
 )
 {% endhighlight %}
 
-You'll notice here that none of the information is filled out. This is a piece we at NSIDC have not really figured out. All of the metadata (name, version, ...) is actually stored in the conda file `meta.yaml` but the `setup.py` is still used to build the python package (which gets wrapped up in the conda package). If your reading this and have some clarification on this issue please let us know! Finally, the `meta.yaml`:
+You'll notice here that none of the information is filled out. This is a piece we at NSIDC have not really figured out. All of the metadata (name, version, ...) is actually stored in the conda file `meta.yaml` but the `setup.py` is still used to build the python package (which gets wrapped up in the conda package). If you're reading this and have some clarification on this issue please let us know! Finally, the `meta.yaml`:
 
 {% highlight yaml %}
 package:
