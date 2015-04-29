@@ -36,13 +36,13 @@ $ wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 $ bash Miniconda-latest-MacOSX-x86_64.sh
 {% endhighlight %}
 
-Follow the installation process and make sure to add the instalation to your PATH.
+Follow the installation process and make sure to add the installation to your PATH.
 
 {% highlight bash %}
 $ export PATH="/Users/[username]/miniconda/bin:$PATH" # add this to .bashrc
 {% endhighlight %}
 
-In addition I reccoment installting argcomplete for conda command tab completiong. This process is very simple:
+In addition I recommend installting argcomplete for conda command tab completion. This process is very simple:
 
 {% highlight bash %}
 $ conda install argcomplete
@@ -51,16 +51,16 @@ $ eval "$(register-python-argcomplete conda)" # add this to .bashrc
 
 ### Conda Environments
 
-The first thing you'll want to figure out is how to CRUD conda environemtns (the virtualenv equivelant). Luckily this is also very simple! Lets create a new environment and install some packages:
+The first thing you'll want to figure out is how to use conda environments (the virtualenv equivelant). Luckily this is also very simple! Lets create a new environment and install some packages:
 
 {% highlight bash %}
 $ conda create -n test numpy
 {% endhighlight %}
 
-This command just created a new conda enviroment called "test" and installed the numpy package. To activate this environment simply run:
+This command just created a new conda environment called `test` and installed the numpy package. To activate this environment simply run:
 
 {% highlight bash %}
-$ . activate test
+$ . activate test # source activate test
 {% endhighlight %}
 
 Run the following command to see a list of installed packages:
@@ -69,7 +69,7 @@ Run the following command to see a list of installed packages:
 $ conda list
 {% endhighlight %}
 
-You'll see that `python 2.7.9` is listed as a dependency. Python itself is actually just a package to conda. This means in any environment at any time you can change your python version and it will update dependencies for you. What this means for a development environment is that conda env's can also act as a replacement for [pyenv](https://github.com/yyuu/pyenv).
+You'll see that `python 2.7.9` is listed as a dependency. Python itself is actually just a package to conda. This means in any environment at any time you can change your python version and it will update dependencies for you. What this means is that conda env's can also act as a replacement for [pyenv](https://github.com/yyuu/pyenv).
 
 There is much more information on conda environments [here](http://conda.pydata.org/docs/faq.html#env)
 
@@ -105,7 +105,7 @@ if __name__ == '__main__':
     hello()
 {% endhighlight %}
 
-I have included [click](http://click.pocoo.org/4/) here so that we can see dependencies are handled in the packaging process. The file `setup.py` follows:
+I have included [click](http://click.pocoo.org/4/) here so that we can see how dependencies are handled in the packaging process. The file `setup.py` follows:
 
 {% highlight python %}
 from setuptools import setup, find_packages
@@ -160,18 +160,30 @@ This command will read the `meta.yaml` and execute the build using all of the in
 
 `/Users/kpurdon/miniconda/conda-bld/osx-64/hello-0.0.1-py27_0.tar.bz2`
 
-You should not that this package is an osx-64 specific binary. In the next section (Deployment Basics) I will demonstrate how to build packages for all architectures. For now lets just install the new package:
+You should note that this package is an osx-64 specific binary. In the next section (Deployment Basics) I will demonstrate how to build packages for all architectures. For now lets just install the new package:
 
 {% highlight bash %}
 $ conda install /Users/kpurdon/miniconda/conda-bld/osx-64/hello-0.0.1-py27_0.tar.bz2
 {% endhighlight %}
 
-The package should install, including it's dependencies (Python 2.7* and Click). We can now execute the entry-point command we defined in `meta.yaml` and see the expected output:
+The package should install, including it's dependencies (Python 2.7* and Click). We can now execute the entry-point command `hello` we defined in `meta.yaml` and see the expected output:
 
 {% highlight bash %}
 $ hello Kyle
 Hello, Kyle
 {% endhighlight %}
+
+### Dependencies Not on Binstar
+
+At some point you will run into a situation where a python dependency you need is not yet converted to a conda package and released on binstar. For development you can just `pip install [pkg]` into your conda env, but for packaging you will want the package to be in conda and on binstar. Luckily this is very easy!
+
+{% highlight bash %}
+$ conda skeleton pypi [somepackage]
+$ conda build [somepackage]
+# now follow the binstar upload instructions in the next section!
+{% endhighlight %}
+
+With just a few simple commands you can take a python package that is on pypi, create a conda package, build it, and be ready to upload it to your own channel on binstar!
 
 ---
 
@@ -206,7 +218,7 @@ $ find . -name hello*
 
 ### Uploading To Binstar
 
-Before we can upload to Binsar we'll need to complete two simple tasks:
+Before we can upload to Binstar we'll need to complete two simple tasks:
 
 1. Register at [Binstar.org](https://binstar.org)
 2. `conda install binstar`
