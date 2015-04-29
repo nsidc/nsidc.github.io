@@ -14,7 +14,7 @@ What is Conda/Anaconda?
 
 ### Conda
 
-Conda is an alternative to the traditional Python development, packaging, and deployment environment. It replaces [pip](https://pypi.python.org/pypi/pip) with [conda](http://conda.pydata.org/docs/), [virtualenv](https://virtualenv.pypa.io/en/latest/) with [conda env](http://conda.pydata.org/docs/faq.html#env), [pypi](https://pypi.python.org/pypi) with [binstar](https://binstar.org), and [sdist/wheel packages](https://packaging.python.org/en/latest/) with [conda packages](http://conda.pydata.org/docs/build_tutorials/pkgs.html). That's right, everything! However, you can still use all of the standard python tools with conda. For example you can pip install a package into a conda environmnet and a conda package is just a binary package wrapped around a standard python sdist package.
+Conda is an alternative to the traditional Python development, packaging, and deployment environment. It replaces [pip](https://pypi.python.org/pypi/pip) with [conda](http://conda.pydata.org/docs/), [virtualenv](https://virtualenv.pypa.io/en/latest/) with [conda env](http://conda.pydata.org/docs/faq.html#env), [PyPI](https://pypi.python.org/pypi) with [binstar](https://binstar.org), and [sdist/wheel packages](https://packaging.python.org/en/latest/) with [conda packages](http://conda.pydata.org/docs/build_tutorials/pkgs.html). That's right, everything! However, you can still use all of the standard python tools with conda. For example you can pip install a package into a conda environmnet and a conda package is just a binary package wrapped around a standard python sdist package.
 
 ### Anaconda
 
@@ -156,17 +156,17 @@ With all of these files in place we can build a conda package. Note you will nee
 $ conda build .
 {% endhighlight %}
 
-This command will read the `meta.yaml` and execute the build using all of the information we have given it. Note the `script` entry tells build to run flake8 and then setup.py install. This will check the syntax and then build/install the python package using `setup.py`. One great thing about conda is that it does it's builds in isolated environments by default! Once the build is complete you will get some output that tells you where the package was built and what to do next. In my case the package built was:
+This command will read the `meta.yaml` and execute the build using all of the information we have given it. Note the `script` entry tells build to run flake8 and then setup.py install. This will check the syntax and then build/install the python package using `setup.py`. One great thing about conda is that it does its builds in isolated environments by default! Once the build is complete you will get some output that tells you where the package was built and what to do next. In my case the package built was:
 
 `/Users/kpurdon/miniconda/conda-bld/osx-64/hello-0.0.1-py27_0.tar.bz2`
 
-You should note that this package is an osx-64 specific binary. In the next section (Deployment Basics) I will demonstrate how to build packages for all architectures. For now lets just install the new package:
+You should note that this package is an osx-64 specific binary. In the next section (Deployment Basics) I will demonstrate how to build packages for all architectures. For now let's just install the new package:
 
 {% highlight bash %}
 $ conda install /Users/kpurdon/miniconda/conda-bld/osx-64/hello-0.0.1-py27_0.tar.bz2
 {% endhighlight %}
 
-The package should install, including it's dependencies (Python 2.7* and Click). We can now execute the entry-point command `hello` we defined in `meta.yaml` and see the expected output:
+The package should install, including its dependencies (Python 2.7* and Click). We can now execute the entry-point command `hello` we defined in `meta.yaml` and see the expected output:
 
 {% highlight bash %}
 $ hello Kyle
@@ -183,14 +183,14 @@ $ conda build [somepackage]
 # now follow the binstar upload instructions in the next section!
 {% endhighlight %}
 
-With just a few simple commands you can take a python package that is on pypi, create a conda package, build it, and be ready to upload it to your own channel on binstar!
+With just a few simple commands you can take a python package that is on PyPI, create a conda package, build it, and be ready to upload it to your own channel on binstar!
 
 ---
 
 Deployment Basics
 ---
 
-Once we have a conda package we'll need to deploy it to some package repository. Normally you would upload a Python package to [pypi](). The conda equivalent to pypi is [Binstar](https://binstar.org). You can also create a local repository using [custom channels](http://conda.pydata.org/docs/custom-channels.html).
+Once we have a conda package we'll need to deploy it to some package repository. Normally you would upload a Python package to PyPI. The conda equivalent to PyPI is [Binstar](https://binstar.org). You can also create a local repository using [custom channels](http://conda.pydata.org/docs/custom-channels.html).
 
 ### Creating Multi-Arch Packages
 
