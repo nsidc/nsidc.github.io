@@ -8,3 +8,6 @@ github_username:  nsidc
 
 markdown: kramdown
 paginate: 3
+
+exclude:
+  - vendor
