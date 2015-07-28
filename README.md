@@ -6,7 +6,7 @@ This is the source for the NSIDC Technology Blog at [nsidc.github.io](nsidc.gith
 
 ## Quick-Start
 
-* `bundle install`
+* `bundle install` or `bundle install --path=vendor`
 * Create a new branch titled `my-post-title`
 * `bundle exec rake new_post['my-post-tile','My Name']`
 * Preview with `bundle exec jekyll serve` OR (see Blogging Preview Tips below)
