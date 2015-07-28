@@ -42,7 +42,7 @@ Follow the installation process and make sure to add the installation to your PA
 $ export PATH="/Users/[username]/miniconda/bin:$PATH" # add this to .bashrc
 {% endhighlight %}
 
-In addition I recommend installing argcomplete for conda command tab completion. This process is very simple:
+In addition I recommend installing argcomplete for conda command  tab completion. This process is very simple:
 
 {% highlight bash %}
 $ conda install argcomplete
