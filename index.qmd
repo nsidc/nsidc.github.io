@@ -1,5 +1,5 @@
 ---
-title: "."
+title: "NSIDC Technical Blog"
 listing:
   contents: posts
   sort: "date desc"
