@@ -14,7 +14,9 @@ website:
         href: https://twitter.com/NSIDC
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: ["flatly", default]
+      dark: ["darkly", default]
     css: styles.css
 
 
