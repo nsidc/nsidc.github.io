@@ -3,6 +3,7 @@ title: "Conda Python at NSIDC: Changing How We Do Python"
 author: "Kyle W Purdon"
 date: "2015-04-29"
 categories: [python, deployment, anaconda]
+image: "python-conda.png"
 ---
 
 
