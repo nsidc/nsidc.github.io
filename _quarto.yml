@@ -2,14 +2,16 @@ project:
   type: website
 
 website:
-  title: "."
+  title: "NSIDC Technical Blog"
   navbar:
     right:
+      - text: "Home"
+        file: index.qmd
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/nsidc
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/NSIDC
 format:
   html:
     theme: cosmo
