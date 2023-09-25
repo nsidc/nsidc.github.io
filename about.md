@@ -2,7 +2,7 @@
 title: "About"
 image: https://nsidc.org/themes/custom/nsidc/logo.svg
 about:
-  template: jolla
+  template: trestles 
   links:
     - icon: twitter
       text: Twitter
