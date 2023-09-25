@@ -7,8 +7,7 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
+max-description-length: 250
 page-layout: full
 title-block-banner: true
 ---
-
-
