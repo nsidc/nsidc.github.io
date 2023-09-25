@@ -6,9 +6,9 @@ website:
   navbar:
     right:
       - text: "Home"
-        file: "index.qmd"
+        file: "index.md"
       - text: "About"
-        file: "about.qmd"
+        file: "about.md"
       - icon: "github"
         href: "https://github.com/nsidc"
       - icon: "twitter"
