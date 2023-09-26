@@ -9,7 +9,7 @@ image: "featured_condaforge.png"
 ### What is Conda-Forge?
 [Conda-Forge](https://github.com/conda-forge) is a community led collection of recipes, build infrastructure and distributions for the conda package manager.
 
-We used to have an [NSIDC channel](https://anaconda.org/NSIDC) on conda-forge. This method was not the best as we often ran into complications. Most of these packages are now maintained on anaconda.org through the standard conda-forge. 
+There is an [NSIDC channel](https://anaconda.org/NSIDC) on conda-forge.  Most of these packages are now maintained on anaconda.org through the standard conda-forge. It s prefferred to use the [`conda-forge`channel](https://github.com/conda-forge) due to the checks and balances for maintaining that are kept up there.  
 
 ### Becoming a maintainer
 
