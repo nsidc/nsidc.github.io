@@ -1,13 +1,14 @@
 ---
-title: "NSIDC Technical Blog"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
+  contents: "posts"
+  type: "default"
   categories: true
-  sort-ui: false
-  filter-ui: false
+  sort:
+    - "date desc"
+    - "title"
+  sort-ui: true
+  filter-ui: true
 max-description-length: 250
-page-layout: full
+page-layout: "full"
 title-block-banner: true
 ---
