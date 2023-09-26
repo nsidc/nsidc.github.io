@@ -2,7 +2,7 @@
 
 This is a blog by and for NSIDC developers.
 
-The website is built in GitHub Actions by [Quarto](quarto.org), a modern technical
+The website is built in GitHub Actions by [Quarto](https://quarto.org/), a modern technical
 publishing tool. The website is deployed to GitHub Pages.
 
 
