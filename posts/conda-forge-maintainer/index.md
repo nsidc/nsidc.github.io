@@ -14,7 +14,7 @@ There is an [NSIDC channel](https://anaconda.org/NSIDC) on Anaconda.org that we 
 
 ### Becoming a maintainer
 
-I was working on a project and wanted to use `flask-dance`. The `current version is `v7.0.0` whereas [the conda-forge package](https://anaconda.org/conda-forge/flask-dance/) had not been updated since `v2.2.0`, over 4 years prior. 
+I was working on a project and wanted to use `flask-dance`. The current version is `v7.0.0` whereas [the conda-forge package](https://anaconda.org/conda-forge/flask-dance/) had not been updated since `v2.2.0`, over 4 years prior. 
 
 I prefer to install `flask-dance` as a `conda` package, so I went over to the `conda-forge` [flask-dance-feedstock repository](https://github.com/conda-forge/flask-dance-feedstock) on GitHub. I saw that there was not an active maintainer and someone tried to [become one](https://github.com/conda-forge/flask-dance-feedstock/issues/7) back in 2021 to update the repository and had received no response. 
 
