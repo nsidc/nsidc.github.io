@@ -20,7 +20,7 @@ I prefer to install `flask-dance` as a `conda` package, so I went over to the `c
 I used the [mainter docs](https://conda-forge.org/docs/maintainer/infrastructure.html#conda-forge-admin-please-add-user-username) to be added as a maintainer. I opened this [issue](https://github.com/conda-forge/flask-dance-feedstock/issues/10) which led to this [pull request](https://github.com/conda-forge/flask-dance-feedstock/pull/11) where I was added as a maintainer. Since it had been so long since there was an activate maintainer, I had to contact conda-forge/core and admin: ```@conda-forge/core please add me, the previous maintainer has not been active in years. @conda-forge-admin, please ping conda-forge/core```
 
 ### Updating a package
-Once I got maintainer status I started the process of updating the `flask-dance-feedstock` so that I could start using it with conda. 
+Once I received maintainer permissions I started the process of updating the `flask-dance-feedstock` to release the newest version.
 
 First I opened an [issue](https://github.com/conda-forge/flask-dance-feedstock/issues/12) asking to rerender. Which let to this [pull request](https://github.com/conda-forge/flask-dance-feedstock/pull/13). I actually made a small mistake here by not bumping the build number since this was simply a rerender and NOT a new build. This is outlined [here](https://conda-forge.org/docs/maintainer/updating_pkgs.html#updating-recipes) in the docs. I followed [these](https://conda-forge.org/docs/maintainer/updating_pkgs.html#archiving-feedstocks) instructions to fix my mistake with this [pull request](https://github.com/conda-forge/admin-requests/pull/817). You can now see the package marked as `broken` on [anaconda](https://anaconda.org/conda-forge/flask-dance/files). 
 
