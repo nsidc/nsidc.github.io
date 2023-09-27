@@ -23,7 +23,7 @@ When using cherry pick it is very important to look at your git log and understa
 
 First it can be useful to look at the branches you have. I did this with the `git branch` command and as you can see the one with the asterik and in green is the branch I am currently on. 
 
-![](branch-list.png)
+![](show-branches.png)
 
 I use `git lola` which is an alias:  `lola = log --graph --decorate --oneline --all`. I highly recommending adding this alias to your `.gitconfig`. 
 
