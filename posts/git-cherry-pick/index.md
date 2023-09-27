@@ -65,6 +65,7 @@ Now at this point I want to take everything from the old `cherry-pick-post` bran
 There are 3 commits that I want so I can actually pick them all a once. 
 
 `git cherry-pick 9e5da76 463956b 3edb3ee`
+
 ![](pick-2.png)
 
 GitHub gives a great summary of what is happening and shows the commits I am picking. 
@@ -76,4 +77,10 @@ At this point I have the 3 commits I want on my new branch so I can go ahead and
 
 ![](lola-3.png)
 
-Now I no loger want the old branch so I will delete it usingg `git branch -D cherry-pick-post` this will only delete it locally, so you will need to do `git push origin :cherry-pick-post` to delete it from GitHub as well.
+Now I no loger want the old branch so I will delete it using `git branch -D cherry-pick-post` this will only delete it locally, so you will need to do `git push origin :cherry-pick-post` to delete it from GitHub as well.
+
+Note: github will keep untracked history for 2 weeks so there is always time to alter if you decide you want to revive something. 
+
+## Summary
+
+Cherry picking is a very powerful tool for when a user wants to copy a commit from one branch to another. 
