@@ -21,6 +21,7 @@ The development team at [The National Snow and Ice Data Center
 
 >Advancing Knowlede of Earth's Frozen Regions
 
+NSIDC is the authoritative data management and science center for cryospheric data and research. We advance understanding of Earth’s frozen regions and the changes taking place to inform decision-making, in service to humanity and Earth.
 
 ### Technology at NSIDC
 
