@@ -16,7 +16,19 @@ Read more in the [official docs](https://git-scm.com/docs/git-cherry-pick)
 
 `cherry-pick` is best used when a change has been committed onto a different branch than desired. You can *pick* commits one by one or by choose a range and move them to the desired branch. 
 
-`git cherry-pick` usually brings a commit from somewhere else and applies it on top of your current branch, recording a new commit, while `git rebase` takes your current branch and rewrites a series of its own tip commits in one way or another.
+```
+git cherry-pick <commit>
+git cherry-pick <commit A> <commit B>
+git cherry-pick <commit A>...<commit C>
+```
+
+### How is `cherry-pick` different than `rebase`?
+
+`git cherry-pick` usually brings a commit from somewhere else and applies it on top of your current branch, recording a new commit, while `git rebase` reapplies commits on top of another base tip.
+
+`cherry-pick` is simpler and less risky. `rebase` is a valuable tool, but if you don't understand what it's doing, you can get in trouble pretty easily.
+
+`rebase` will likely be covered in a future post. 
 
 ## Git command/syntax:
 
@@ -82,4 +94,6 @@ Note: Git may keep untracked history for around 2 weeks so there is always time 
 
 ## Summary
 
-Cherry picking is a tool for copying commit(s) from one branch to another. 
+Cherry picking is a tool for copying commit(s) from one branch to another.
+It is important to remember that this is a powerful tool and you should proceed with caution when using it to copy a commit(s) to a different branch. 
+Learning `cherry-pick` is a useful step on the way to learning about `rebase` - which will be covered in this space soon. 
