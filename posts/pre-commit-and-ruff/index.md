@@ -1,6 +1,6 @@
 ---
 title: "Adopting *pre-commit* & *Ruff* at NSIDC"
-authors: "Robyn Marowitz, Matt Fisher"
+author: "Matt Fisher, Robyn Marowitz"
 date: "2023-09-27"
 description: "*pre-commit* and *Ruff* together establish a tighter feedback loop, saving time and effort during local development, and lower the mental burden of our tooling."
 categories: [linting, git, ruff, pre-commit, ci, python]
