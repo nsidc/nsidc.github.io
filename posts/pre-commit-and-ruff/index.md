@@ -141,6 +141,11 @@ It's also possible to [match filenames on a regex pattern](https://pre-commit.co
 
 We've adopted *pre-commit* and *Ruff* on several projects, including [QGreenland](https://github.com/nsidc/qgreenland), [earthaccess](https://github.com/nsidc/sipn-reanalysis-ingest), [US AON Benefit Tool](https://github.com/nsidc/usaon-vta-survey), and [CFSR Reanalysis Tool](https://github.com/nsidc/sipn-reanalysis-ingest).
 
+This gif and image show an example of these tools being used: 
+![](precommit_ruff.gif)
+
+![](pre-commit.png)
+
 We have been very happy so far with using these tools at NSIDC.
 The time saved by adopting these tools has been impactful, but not nearly as impactful as the mental overhead saved.
 They truly feel like magic - completely releasing us from thinking about a whole category of code quality concerns. 
