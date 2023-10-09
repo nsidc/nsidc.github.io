@@ -75,7 +75,6 @@ Running `pre-commit` will trigger all of its dependencies (here, just Ruff) to b
 Once you've installed a *pre-commit* configuration as documented above, running *Ruff* is as easy as `git commit`. 
 This will always be the fastest way to run *pre-commit* checks, as it requires no additional work, and because *pre-commit* will only run checks on files changed in this commit.
 
-TODO: Add a gif recording 
 
 Some ways you might want to run *pre-commit* manually:
 
