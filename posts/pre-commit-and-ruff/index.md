@@ -144,7 +144,7 @@ We've adopted *pre-commit* and *Ruff* on several projects, including [QGreenland
 This gif and image show an example of these tools being used: 
 ![](precommit_ruff.gif)
 
-`Ruff` is so fast that if you don't watch closesly you might miss it!
+`Ruff` is so fast that if you don't watch closely you might miss it!
 
 ![](pre-commit.png)
 
