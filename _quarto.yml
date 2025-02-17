@@ -2,13 +2,11 @@ project:
   type: "website"
 
 website:
-  title: "NSIDC Technical Blog"
+  title: "NSIDC"
   navbar:
     right:
       - text: "Home"
         file: "index.md"
-      - text: "About"
-        file: "about.md"
       - icon: "github"
         href: "https://github.com/nsidc"
       - icon: "twitter"

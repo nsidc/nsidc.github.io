@@ -1,14 +1,6 @@
 ---
-listing:
-  contents: "posts"
-  type: "default"
-  categories: true
-  sort:
-    - "date desc"
-    - "title"
-  sort-ui: true
-  filter-ui: true
-max-description-length: 250
-page-layout: "full"
-title-block-banner: true
+title: "NSIDC"
 ---
+
+Welcome to the NSIDC github websites home page. 
+Click [here](nsidc.github.io/NSIDC-Data-Cookbook/) if you are looking for the NSIDC Data Cookbook or [here](https://nsidc.github.io/NSIDC-Technical-Blog/) if you are lookking for the NSIDC Technical Blog.
