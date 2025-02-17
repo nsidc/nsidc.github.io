@@ -1,4 +1,4 @@
-name: "nsidc-technical-blog"
+name: "nsidc-github-pages"
 channels:
   - "conda-forge"
   - "nodefaults"
