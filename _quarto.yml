@@ -5,8 +5,6 @@ website:
   title: "NSIDC"
   navbar:
     right:
-      - text: "Home"
-        file: "index.md"
       - icon: "github"
         href: "https://github.com/nsidc"
       - icon: "twitter"
