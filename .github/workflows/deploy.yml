@@ -30,12 +30,6 @@ jobs:
       - name: "Check out repository"
         uses: "actions/checkout@v4"
 
-      - name: "Install Conda environment"
-        uses: "mamba-org/setup-micromamba@v1"
-        with:
-          environment-file: "environment.yml"
-          cache-environment: true
-
       - name: "Render Quarto website"
         run: "quarto render ."
 
@@ -55,4 +49,3 @@ jobs:
       - name: "Deploy to GitHub Pages"
         id: "deployment"
         uses: "actions/deploy-pages@v2"
-
